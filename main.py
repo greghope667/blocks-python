@@ -21,7 +21,7 @@ def window():
         dpg.add_input_text(label="input")
 
 def imnode():
-    with dpg.window(label="Tutorial", width=400, height=400, no_close=True, minimap=True, minimap_location=dpg.mvNodeMiniMap_Location_BottomRight):
+    with dpg.window(label="Tutorial", width=400, height=400, no_close=True):
         editor.draw_scene(editor.Scene())
 
 import dearpygui.demo as demo

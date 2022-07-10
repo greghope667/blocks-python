@@ -40,6 +40,6 @@ def draw_block(b: Node) -> None:
             dpg.add_input_text(multiline=True, width=150)
 
 def draw_scene(scene:Scene) -> None:
-    with dpg.node_editor(tag="Editor Window", callback=link_callback, delink_callback=delink_callback):
+    with dpg.node_editor(tag="Editor Window", callback=link_callback, delink_callback=delink_callback, minimap=True, minimap_location=dpg.mvNodeMiniMap_Location_BottomRight):
         for b in scene.blocks:
             draw_block(b)
